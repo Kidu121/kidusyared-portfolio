@@ -1,550 +1,498 @@
-import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Loader2,
-  CheckCircle,
+  Award,
+  ExternalLink,
 } from "lucide-react";
 
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
 
 
-export default function Contact() {
+const certificates = [
 
-  const form = useRef<HTMLFormElement>(null);
+{
+title:
+"Information Technology Bachelor's Degree",
 
-  const [loading,setLoading] = useState(false);
-  const [success,setSuccess] = useState(false);
-  const [error,setError] = useState("");
+issuer:
+"Wachemo University",
 
+year:
+"2024",
 
+link:"#",
 
-  const sendEmail = async (e: React.FormEvent) => {
+},
 
-    e.preventDefault();
 
-    if(!form.current) return;
+{
+title:
+"Coming Soon",
 
+issuer:
+"Future Professional Certifications",
 
-    setLoading(true);
-    setError("");
-    setSuccess(false);
+year:
+"2026",
 
+link:"#",
 
-    try {
+},
 
-      await emailjs.sendForm(
-        "service_cursvs6",
-        "template_ce9g4zp",
-        form.current,
-        "OwbnxaHlOeVuanoqd"
-      );
 
+];
 
-      setSuccess(true);
-      form.current.reset();
 
 
-    } catch(err){
 
-      console.error(err);
-      setError("Something went wrong. Please try again.");
 
-    }
-    finally{
 
-      setLoading(false);
 
-    }
+export default function Certificates(){
 
-  };
 
+return(
 
 
-  return (
+<section
 
-    <section
-      id="contact"
-      className="
-      py-20 px-6
-      bg-gray-50
-      dark:bg-gray-950
-      transition-colors duration-300
-      "
-    >
+id="certificates"
 
-      <div className="
-      max-w-6xl mx-auto
-      grid md:grid-cols-2
-      gap-10
-      ">
+className="
 
+py-16
 
-        {/* Contact Information */}
+sm:py-24
 
-        <motion.div
+px-4
 
-          initial={{
-            opacity:0,
-            x:-50
-          }}
+sm:px-6
 
-          whileInView={{
-            opacity:1,
-            x:0
-          }}
+bg-gray-50
 
-          transition={{
-            duration:0.5
-          }}
+dark:bg-gray-950
 
-          viewport={{
-            once:true
-          }}
+transition-colors
 
-        >
+duration-300
 
-          <h2 className="
-          text-4xl
-          font-bold
-          mb-6
-          text-gray-900
-          dark:text-white
-          ">
-            Contact Me
-          </h2>
+"
 
+>
 
 
-          <p className="
-          text-gray-600
-          dark:text-gray-400
-          mb-8
-          ">
-            Have a project or opportunity?
-            Feel free to send me a message.
-          </p>
 
+<div
 
+className="
 
-          <div className="space-y-5">
+max-w-6xl
 
+mx-auto
 
-            <div className="flex items-center gap-4">
-              <Mail className="text-blue-600"/>
+"
 
-              <span className="
-              text-gray-800
-              dark:text-gray-200
-              ">
-                kidusyaredlik@gmail.com
-              </span>
-            </div>
-
-
-
-            <div className="flex items-center gap-4">
-              <Phone className="text-blue-600"/>
+>
 
-              <span className="
-              text-gray-800
-              dark:text-gray-200
-              ">
-                +251 927209931 ,
-                +251923519111
-              </span>
-            </div>
 
-
-
-            <div className="flex items-center gap-4">
-              <MapPin className="text-blue-600"/>
-
-              <span className="
-              text-gray-800
-              dark:text-gray-200
-              ">
-                Addis Ababa, Ethiopia
-              </span>
-            </div>
-
-
-          </div>
-
-
-
-          {/* Social Links */}
-
-          <div className="mt-10">
-
-            <h3 className="
-            text-xl
-            font-semibold
-            mb-5
-            text-gray-900
-            dark:text-white
-            ">
-              Connect With Me
-            </h3>
-
-
-            <div className="
-            flex
-            flex-wrap
-            gap-4
-            ">
-
-
-              {/* LinkedIn */}
-
-              <a
-                href="https://www.linkedin.com/in/kidusyared-liku-975396337"
-                target="_blank"
-                rel="noreferrer"
-                className="
-                flex
-                items-center
-                gap-2
-                px-4
-                py-2
-                rounded-lg
-                bg-blue-600
-                text-white
-                hover:bg-blue-700
-                transition
-                "
-              >
-                <FaLinkedin size={20}/>
-                LinkedIn
-              </a>
 
 
-
-              {/* GitHub */}
 
-              <a
-                href="https://github.com/Kidu121"
-                target="_blank"
-                rel="noreferrer"
-                className="
-                flex
-                items-center
-                gap-2
-                px-4
-                py-2
-                rounded-lg
-                bg-gray-900
-                text-white
-                hover:bg-gray-700
-                transition
-                "
-              >
-                <FaGithub size={20}/>
-                GitHub
-              </a>
-
-
 
-              {/* Telegram */}
+{/* Header */}
 
-              <a
-                href="https://t.me/Bobby_cr"
-                target="_blank"
-                rel="noreferrer"
-                className="
-                flex
-                items-center
-                gap-2
-                px-4
-                py-2
-                rounded-lg
-                bg-sky-500
-                text-white
-                hover:bg-sky-600
-                transition
-                "
-              >
-                <Send size={20}/>
-                Telegram
-              </a>
 
 
+<motion.h2
 
-              {/* Instagram */}
 
-              <a
-                href="https://instagram.com/ki_dusan"
-                target="_blank"
-                rel="noreferrer"
-                className="
-                flex
-                items-center
-                gap-2
-                px-4
-                py-2
-                rounded-lg
-                bg-pink-600
-                text-white
-                hover:bg-pink-700
-                transition
-                "
-              >
-                <FaInstagram size={20}/>
-                Instagram
-              </a>
+initial={{
 
+opacity:0,
 
-            </div>
+y:40
 
-          </div>
+}}
 
 
-        </motion.div>
-                {/* Contact Form */}
+whileInView={{
 
+opacity:1,
 
-        <motion.form
+y:0
 
-          ref={form}
+}}
 
-          onSubmit={sendEmail}
 
 
-          initial={{
-            opacity:0,
-            x:50
-          }}
+viewport={{
 
-          whileInView={{
-            opacity:1,
-            x:0
-          }}
+once:true
 
-          transition={{
-            duration:0.5
-          }}
+}}
 
-          viewport={{
-            once:true
-          }}
 
 
-          className="
-          bg-white
-          dark:bg-gray-900
-          p-8
-          rounded-2xl
-          shadow-lg
-          space-y-5
-          border
-          border-gray-200
-          dark:border-gray-800
-          "
+transition={{
 
-        >
+duration:0.6
 
+}}
 
 
-          <input
 
-            type="text"
+className="
 
-            name="user_name"
+text-3xl
 
-            placeholder="Your Name"
+sm:text-4xl
 
-            required
+font-bold
 
-            className="
-            w-full
-            p-3
-            rounded-lg
-            bg-gray-100
-            dark:bg-gray-800
-            border
-            border-gray-300
-            dark:border-gray-700
-            text-gray-900
-            dark:text-white
-            outline-none
-            "
+text-center
 
-          />
+mb-10
 
+sm:mb-14
 
+text-gray-900
 
+dark:text-white
 
+"
 
-          <input
+>
 
-            type="email"
 
-            name="user_email"
+Certificates
 
-            placeholder="Your Email"
 
-            required
+</motion.h2>
 
-            className="
-            w-full
-            p-3
-            rounded-lg
-            bg-gray-100
-            dark:bg-gray-800
-            border
-            border-gray-300
-            dark:border-gray-700
-            text-gray-900
-            dark:text-white
-            outline-none
-            "
 
-          />
 
 
 
 
 
 
-          <textarea
 
-            name="message"
+{/* Cards */}
 
-            placeholder="Your Message"
 
-            rows={5}
 
-            required
+<div
 
-            className="
-            w-full
-            p-3
-            rounded-lg
-            bg-gray-100
-            dark:bg-gray-800
-            border
-            border-gray-300
-            dark:border-gray-700
-            text-gray-900
-            dark:text-white
-            outline-none
-            "
+className="
 
-          />
+grid
 
+grid-cols-1
 
+md:grid-cols-2
 
+gap-5
 
+sm:gap-8
 
+"
 
+>
 
-          <button
 
-            disabled={loading}
 
-            className="
-            w-full
-            flex
-            items-center
-            justify-center
-            gap-2
-            bg-blue-600
-            hover:bg-blue-700
-            text-white
-            py-3
-            rounded-lg
-            transition
-            "
+{certificates.map((item,index)=>(
 
-          >
 
 
-            {loading ? (
 
-              <>
+<motion.div
 
-                <Loader2 className="animate-spin"/>
 
-                Sending...
 
-              </>
+key={index}
 
 
-            ) : (
 
-              <>
+initial={{
 
-                <Send size={20}/>
+opacity:0,
 
-                Send Message
+y:40
 
-              </>
+}}
 
-            )}
 
 
-          </button>
+whileInView={{
 
+opacity:1,
 
+y:0
 
+}}
 
 
 
+viewport={{
 
-          {success && (
+once:true
 
-            <div className="
-            flex
-            items-center
-            gap-2
-            text-green-600
-            dark:text-green-400
-            ">
+}}
 
-              <CheckCircle/>
 
-              Message sent successfully!
 
-            </div>
+transition={{
 
-          )}
+duration:0.5,
 
+delay:index * 0.2
 
+}}
 
 
 
+whileHover={{
 
+y:-8
 
-          {error && (
+}}
 
-            <p className="text-red-500">
 
-              {error}
 
-            </p>
+className="
 
-          )}
+bg-white
 
+dark:bg-gray-800
 
+p-6
 
-        </motion.form>
+sm:p-8
 
+rounded-2xl
 
+shadow-lg
 
-      </div>
+border
 
+border-gray-200
 
-    </section>
+dark:border-gray-700
 
-  );
+transition
+
+"
+
+>
+
+
+
+
+
+
+
+<Award
+
+className="
+
+text-blue-600
+
+mb-5
+
+"
+
+size={35}
+
+/>
+
+
+
+
+
+
+
+
+
+<h3
+
+
+className="
+
+text-lg
+
+sm:text-xl
+
+font-bold
+
+mb-2
+
+text-gray-900
+
+dark:text-white
+
+leading-snug
+
+"
+
+>
+
+
+{item.title}
+
+
+</h3>
+
+
+
+
+
+
+
+<p
+
+
+className="
+
+text-sm
+
+sm:text-base
+
+text-gray-600
+
+dark:text-gray-300
+
+"
+
+>
+
+
+{item.issuer}
+
+
+</p>
+
+
+
+
+
+
+
+
+<p
+
+
+className="
+
+text-sm
+
+text-gray-500
+
+dark:text-gray-400
+
+mt-2
+
+"
+
+>
+
+
+{item.year}
+
+
+</p>
+
+
+
+
+
+
+
+
+
+{item.link !== "#" && (
+
+
+
+<a
+
+
+href={item.link}
+
+
+target="_blank"
+
+
+rel="noreferrer"
+
+
+
+className="
+
+inline-flex
+
+items-center
+
+gap-2
+
+mt-6
+
+text-blue-600
+
+hover:text-blue-700
+
+font-medium
+
+text-sm
+
+sm:text-base
+
+"
+
+
+
+>
+
+
+View Certificate
+
+
+<ExternalLink size={16}/>
+
+
+
+</a>
+
+
+
+)}
+
+
+
+
+
+</motion.div>
+
+
+
+))}
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+);
+
 
 }

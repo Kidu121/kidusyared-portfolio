@@ -1,17 +1,77 @@
 @import "tailwindcss";
 
+
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+
+/* Smooth scrolling */
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
+
+
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+
 
 body {
+
   margin: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  transition: background-color 0.3s, color 0.3s;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  overflow-x: hidden;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
 }
 
+
+
+/* Images Responsive */
+
+img {
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+
+/* Dark Mode */
+
 .dark {
+
   color-scheme: dark;
+
+}
+
+
+
+/* Selection */
+
+::selection {
+
+  background: #2563eb;
+
+  color: white;
+
 }

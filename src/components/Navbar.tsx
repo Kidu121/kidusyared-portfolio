@@ -10,22 +10,27 @@ export default function Navbar() {
 
 
   const links = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    {name: "Services", href: "#services",},
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href:"#home" },
+    { name:"About", href:"#about" },
+    { name:"Services", href:"#services" },
+    { name:"Skills", href:"#skills" },
+    { name:"Projects", href:"#projects" },
+    { name:"Contact", href:"#contact" },
   ];
+
 
 
   return (
 
     <header
       className="
-      fixed top-0 left-0 w-full z-50
-      bg-white/80
-      dark:bg-gray-950/80
+      fixed
+      top-0
+      left-0
+      w-full
+      z-50
+      bg-white/90
+      dark:bg-gray-950/90
       backdrop-blur-lg
       border-b
       border-gray-200
@@ -33,11 +38,13 @@ export default function Navbar() {
       "
     >
 
+
       <div
         className="
         max-w-7xl
         mx-auto
-        px-6
+        px-4
+        sm:px-6
         h-20
         flex
         items-center
@@ -54,36 +61,26 @@ export default function Navbar() {
           text-2xl
           font-bold
           text-blue-600
-          hover:scale-105
-          transition
           "
         >
-
           Kidus
-
-          <span
-            className="
-            text-slate-900
-            dark:text-white
-            "
-          >
+          <span className="text-gray-900 dark:text-white">
             .dev
           </span>
-
         </a>
 
 
 
 
 
-        {/* Desktop Menu */}
+        {/* Desktop Navigation */}
 
         <nav
           className="
           hidden
           md:flex
           items-center
-          gap-8
+          gap-7
           "
         >
 
@@ -92,7 +89,6 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-
               className="
               text-gray-700
               dark:text-gray-300
@@ -100,9 +96,7 @@ export default function Navbar() {
               transition
               "
             >
-
               {link.name}
-
             </a>
 
           ))}
@@ -114,8 +108,7 @@ export default function Navbar() {
 
 
 
-
-        {/* Desktop Right Side */}
+        {/* Desktop Actions */}
 
         <div
           className="
@@ -126,67 +119,43 @@ export default function Navbar() {
           "
         >
 
-
-
           <a
             href="https://github.com/Kidu121"
             target="_blank"
-            rel="noopener noreferrer"
-
+            rel="noreferrer"
             className="
+            text-xl
             text-gray-600
             dark:text-gray-300
-            hover:text-black
-            dark:hover:text-white
-            text-xl
             "
           >
-
             <FaGithub/>
-
           </a>
-
-
 
 
 
           <a
             href="https://www.linkedin.com/in/kidusyared-liku-975396337"
             target="_blank"
-            rel="noopener noreferrer"
-
+            rel="noreferrer"
             className="
+            text-xl
             text-gray-600
             dark:text-gray-300
-            hover:text-blue-600
-            text-xl
             "
           >
-
             <FaLinkedin/>
-
           </a>
 
 
-
-
-
-          {/* Dark Mode */}
 
           <ThemeToggle />
 
 
 
-
-
-
-
-          {/* CV */}
-
           <a
             href="/cv/Kidus_Yared_CV.pdf"
             download
-
             className="
             flex
             items-center
@@ -197,7 +166,6 @@ export default function Navbar() {
             px-4
             py-2
             rounded-lg
-            transition
             "
           >
 
@@ -208,9 +176,7 @@ export default function Navbar() {
           </a>
 
 
-
         </div>
-
 
 
 
@@ -220,26 +186,18 @@ export default function Navbar() {
         {/* Mobile Button */}
 
         <button
-
+          onClick={()=>setOpen(!open)}
           className="
           md:hidden
-          text-gray-800
+          text-gray-900
           dark:text-white
           "
-
-          onClick={()=>setOpen(!open)}
-
         >
 
-          {open ? (
-
-            <X size={28}/>
-
-          ) : (
-
-            <Menu size={28}/>
-
-          )}
+          {open ? 
+            <X size={30}/> :
+            <Menu size={30}/>
+          }
 
         </button>
 
@@ -254,13 +212,11 @@ export default function Navbar() {
 
 
 
-
       {/* Mobile Menu */}
 
       {open && (
 
         <div
-
           className="
           md:hidden
           bg-white
@@ -269,43 +225,33 @@ export default function Navbar() {
           border-gray-200
           dark:border-gray-800
           "
-
         >
 
           <div
-
             className="
-            flex
-            flex-col
-            gap-5
             px-6
             py-6
+            flex
+            flex-col
+            gap-6
             "
-
           >
-
 
 
             {links.map((link)=>(
 
               <a
-
                 key={link.name}
-
                 href={link.href}
-
                 onClick={()=>setOpen(false)}
-
                 className="
+                text-lg
                 text-gray-700
                 dark:text-gray-300
                 hover:text-blue-600
                 "
-
               >
-
                 {link.name}
-
               </a>
 
             ))}
@@ -314,47 +260,31 @@ export default function Navbar() {
 
 
 
-
-
-            <div className="flex gap-5 text-xl">
-
+            <div className="
+            flex
+            items-center
+            gap-6
+            text-xl
+            "
+            >
 
               <a
-
                 href="https://github.com/Kidu121"
-
                 target="_blank"
-
-                rel="noopener noreferrer"
-
-                className="dark:text-white"
-
+                rel="noreferrer"
               >
-
                 <FaGithub/>
-
               </a>
-
-
 
 
 
               <a
-
                 href="https://www.linkedin.com/in/kidusyared-liku-975396337"
-
                 target="_blank"
-
-                rel="noopener noreferrer"
-
-                className="dark:text-white"
-
+                rel="noreferrer"
               >
-
                 <FaLinkedin/>
-
               </a>
-
 
 
             </div>
@@ -363,28 +293,26 @@ export default function Navbar() {
 
 
 
-
-
             <a
-
               href="/cv/Kidus_Yared_CV.pdf"
-
               download
-
               className="
+              flex
+              justify-center
+              items-center
+              gap-2
               bg-blue-600
               text-white
-              rounded-lg
               py-3
-              text-center
+              rounded-lg
               "
-
             >
+
+              <Download size={18}/>
 
               Download CV
 
             </a>
-
 
 
 
@@ -398,9 +326,7 @@ export default function Navbar() {
 
         </div>
 
-
       )}
-
 
 
     </header>

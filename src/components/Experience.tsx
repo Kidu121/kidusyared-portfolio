@@ -35,7 +35,8 @@ export default function Experience() {
     <section
       id="experience"
       className="
-      py-24 px-6
+      py-20 sm:py-24
+      px-4 sm:px-6
       bg-gray-50
       dark:bg-gray-950
       transition-colors duration-300
@@ -48,7 +49,6 @@ export default function Experience() {
         {/* Header */}
 
         <motion.div
-
           initial={{
             opacity:0,
             y:40,
@@ -67,17 +67,19 @@ export default function Experience() {
             once:true,
           }}
 
-          className="text-center mb-16"
-
+          className="text-center mb-12 sm:mb-16"
         >
 
-
-          <h2 className="
-          text-4xl md:text-5xl
-          font-bold
-          text-gray-900
-          dark:text-white
-          ">
+          <h2
+            className="
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+            font-bold
+            text-gray-900
+            dark:text-white
+            "
+          >
 
             Work{" "}
 
@@ -88,12 +90,15 @@ export default function Experience() {
           </h2>
 
 
-
-          <p className="
-          text-gray-600
-          dark:text-gray-400
-          mt-4
-          ">
+          <p
+            className="
+            text-gray-600
+            dark:text-gray-400
+            mt-4
+            text-sm
+            sm:text-base
+            "
+          >
 
             My professional journey and practical experience.
 
@@ -106,22 +111,24 @@ export default function Experience() {
 
 
 
-
-
         {/* Timeline */}
 
         <div className="relative">
 
 
-          <div className="
-          absolute
-          left-5
-          top-0
-          bottom-0
-          w-1
-          bg-blue-200
-          dark:bg-blue-900
-          "></div>
+          {/* Timeline Line */}
+
+          <div
+            className="
+            absolute
+            left-5
+            top-0
+            bottom-0
+            w-1
+            bg-blue-200
+            dark:bg-blue-900
+            "
+          />
 
 
 
@@ -136,7 +143,7 @@ export default function Experience() {
 
               initial={{
                 opacity:0,
-                x:-50,
+                x:-40,
               }}
 
               whileInView={{
@@ -154,8 +161,9 @@ export default function Experience() {
 
               className="
               relative
-              pl-16
-              mb-12
+              pl-14
+              sm:pl-16
+              mb-10
               "
 
             >
@@ -164,20 +172,22 @@ export default function Experience() {
 
               {/* Icon */}
 
-              <div className="
-              absolute
-              left-0
-              top-0
-              w-10
-              h-10
-              rounded-full
-              bg-blue-600
-              text-white
-              flex
-              items-center
-              justify-center
-              shadow-lg
-              ">
+              <div
+                className="
+                absolute
+                left-0
+                top-0
+                w-10
+                h-10
+                rounded-full
+                bg-blue-600
+                text-white
+                flex
+                items-center
+                justify-center
+                shadow-lg
+                "
+              >
 
                 <Briefcase size={20}/>
 
@@ -191,27 +201,34 @@ export default function Experience() {
 
               {/* Card */}
 
-              <div className="
-              bg-white
-              dark:bg-gray-800
-              rounded-3xl
-              p-8
-              shadow-sm
-              hover:shadow-xl
-              border
-              border-gray-200
-              dark:border-gray-700
-              transition
-              ">
+              <div
+                className="
+                bg-white
+                dark:bg-gray-800
+                rounded-2xl
+                sm:rounded-3xl
+                p-5
+                sm:p-8
+                shadow-sm
+                hover:shadow-xl
+                border
+                border-gray-200
+                dark:border-gray-700
+                transition
+                "
+              >
 
 
 
-                <h3 className="
-                text-2xl
-                font-bold
-                text-gray-800
-                dark:text-white
-                ">
+                <h3
+                  className="
+                  text-xl
+                  sm:text-2xl
+                  font-bold
+                  text-gray-800
+                  dark:text-white
+                  "
+                >
 
                   {exp.role}
 
@@ -221,11 +238,13 @@ export default function Experience() {
 
 
 
-                <p className="
-                text-blue-600
-                font-semibold
-                mt-1
-                ">
+                <p
+                  className="
+                  text-blue-600
+                  font-semibold
+                  mt-2
+                  "
+                >
 
                   {exp.company}
 
@@ -236,14 +255,18 @@ export default function Experience() {
 
 
 
-                <div className="
-                flex
-                items-center
-                gap-2
-                text-gray-500
-                dark:text-gray-400
-                mt-3
-                ">
+                <div
+                  className="
+                  flex
+                  items-center
+                  gap-2
+                  text-gray-500
+                  dark:text-gray-400
+                  mt-3
+                  text-sm
+                  sm:text-base
+                  "
+                >
 
                   <Calendar size={18}/>
 
@@ -256,13 +279,16 @@ export default function Experience() {
 
 
 
-
-                <p className="
-                text-gray-600
-                dark:text-gray-300
-                leading-8
-                mt-6
-                ">
+                <p
+                  className="
+                  text-gray-600
+                  dark:text-gray-300
+                  leading-7
+                  mt-6
+                  text-sm
+                  sm:text-base
+                  "
+                >
 
                   {exp.description}
 
@@ -274,20 +300,20 @@ export default function Experience() {
 
 
 
-
-                <h4 className="
-                font-bold
-                text-lg
-                mt-6
-                mb-4
-                text-gray-900
-                dark:text-white
-                ">
+                <h4
+                  className="
+                  font-bold
+                  text-lg
+                  mt-6
+                  mb-4
+                  text-gray-900
+                  dark:text-white
+                  "
+                >
 
                   Responsibilities
 
                 </h4>
-
 
 
 
@@ -315,15 +341,20 @@ export default function Experience() {
                         className="
                         text-blue-600
                         mt-1
+                        flex-shrink-0
                         "
                       />
 
 
 
-                      <p className="
-                      text-gray-600
-                      dark:text-gray-300
-                      ">
+                      <p
+                        className="
+                        text-gray-600
+                        dark:text-gray-300
+                        text-sm
+                        sm:text-base
+                        "
+                      >
 
                         {item}
 
