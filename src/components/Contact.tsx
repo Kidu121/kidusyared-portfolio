@@ -9,10 +9,13 @@ import {
   Send,
   Loader2,
   CheckCircle,
-  Github,
-  Linkedin,
   Download,
 } from "lucide-react";
+
+import {
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 
 export default function Contact() {
@@ -79,7 +82,6 @@ export default function Contact() {
       "
     >
 
-
       <div className="
       max-w-6xl mx-auto
       grid md:grid-cols-2
@@ -88,7 +90,7 @@ export default function Contact() {
 
 
 
-        {/* Contact Info */}
+        {/* Contact Information */}
 
 
         <motion.div
@@ -114,7 +116,6 @@ export default function Contact() {
         >
 
 
-
           <h2 className="
           text-4xl
           font-bold
@@ -126,7 +127,6 @@ export default function Contact() {
             Contact Me
 
           </h2>
-
 
 
 
@@ -146,7 +146,6 @@ export default function Contact() {
 
 
           <div className="space-y-5">
-
 
 
             <div className="flex items-center gap-4">
@@ -198,15 +197,14 @@ export default function Contact() {
             </div>
 
 
-
           </div>
 
 
 
 
 
-          {/* Social Links */}
 
+          {/* Social Links */}
 
           <div className="mt-10">
 
@@ -234,7 +232,7 @@ export default function Contact() {
               {/* LinkedIn */}
 
               <a
-                href="https://www.linkedin.com/in/https://www.linkedin.com/in/kidusyared-liku-975396337"
+                href="https://www.linkedin.com/in/kidusyared-liku-975396337"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -251,11 +249,12 @@ export default function Contact() {
                 "
               >
 
-                <Linkedin size={20}/>
+                <FaLinkedin size={20}/>
 
                 LinkedIn
 
               </a>
+
 
 
 
@@ -281,7 +280,7 @@ export default function Contact() {
                 "
               >
 
-                <Github size={20}/>
+                <FaGithub size={20}/>
 
                 GitHub
 
@@ -295,7 +294,7 @@ export default function Contact() {
               {/* Telegram */}
 
               <a
-                href="https://t.me/https://t.me/Bobby_cr"
+                href="https://t.me/Bobby_cr"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -317,6 +316,7 @@ export default function Contact() {
                 Telegram
 
               </a>
+
 
 
 
@@ -349,14 +349,10 @@ export default function Contact() {
               </a>
 
 
-
             </div>
 
 
           </div>
-
-
-
 
 
         </motion.div>
@@ -368,9 +364,7 @@ export default function Contact() {
 
 
 
-
         {/* Contact Form */}
-
 
 
         <motion.form
@@ -415,16 +409,10 @@ export default function Contact() {
 
 
 
-
-
           <input
-
             type="text"
-
             name="user_name"
-
             placeholder="Your Name"
-
             required
 
             className="
@@ -440,23 +428,15 @@ export default function Contact() {
             dark:text-white
             outline-none
             "
-
           />
-
-
-
 
 
 
 
           <input
-
             type="email"
-
             name="user_email"
-
             placeholder="Your Email"
-
             required
 
             className="
@@ -472,11 +452,7 @@ export default function Contact() {
             dark:text-white
             outline-none
             "
-
           />
-
-
-
 
 
 
@@ -506,8 +482,6 @@ export default function Contact() {
             "
 
           />
-
-
 
 
 
@@ -565,8 +539,6 @@ export default function Contact() {
 
 
 
-
-
           {success && (
 
             <div className="
@@ -584,7 +556,6 @@ export default function Contact() {
             </div>
 
           )}
-
 
 
 
