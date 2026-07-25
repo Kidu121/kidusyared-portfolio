@@ -91,29 +91,29 @@ export default function About() {
 
 
           <span
-            className="
-            inline-block
-            px-4
-            py-1.5
-            rounded-full
-            bg-blue-100
-            dark:bg-blue-900/30
-            text-blue-700
-            dark:text-blue-400
-            font-semibold
-            text-sm
-            "
-          >
-            ABOUT ME
-          </span>
+  className="
+  inline-block
+  px-5
+  py-2
+  rounded-full
+  bg-blue-100
+  dark:bg-blue-900/30
+  text-blue-700
+  dark:text-blue-400
+  font-semibold
+  text-base
+  "
+>
+  ABOUT ME
+</span>
 
 
 
-         <h2
+  <h2
   className="
   mt-6
-  text-3xl
-  md:text-4xl
+  text-2xl
+  md:text-3xl
   font-extrabold
   text-gray-900
   dark:text-white
