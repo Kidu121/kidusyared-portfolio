@@ -238,7 +238,7 @@ export default function Hero() {
               "
             >
 
-              Frontend Developer
+              Software Developer
 
             </h2>
 
@@ -258,7 +258,8 @@ export default function Hero() {
               "
             >
 
-              React • TypeScript • Firebase
+              React • TypeScript • Firebase • FinTech
+
 
             </p>
 
@@ -277,7 +278,7 @@ export default function Hero() {
               "
             >
 
-              AI & FinTech Enthusiast
+              IT Graduate with experience in Digital Financial Solutions
 
             </p>
 
