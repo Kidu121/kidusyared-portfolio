@@ -131,23 +131,22 @@ export default function About() {
 
 
           <p
-            className="
-            mt-6
-            max-w-3xl
-            mx-auto
-            text-lg
-            leading-8
-            text-gray-600
-            dark:text-gray-400
-            "
-          >
+  className="
+  mt-6
+  max-w-3xl
+  mx-auto
+  text-lg
+  leading-8
+  text-gray-600
+  dark:text-gray-400
+  "
+>
 
-            IT professional passionate about creating modern web
-            applications, intelligent AI systems, and digital finance
-            solutions. Focused on building scalable technologies that
-            improve financial services through automation and innovation.
+  Information Technology professional focused on creating scalable web
+  applications, AI solutions, and digital finance technologies that
+  improve the way people access and use financial services.
 
-          </p>
+</p>
 
 
         </motion.div>

@@ -153,8 +153,8 @@ export default function Hero() {
 <h1
   className="
   mt-6
-  text-3xl
-  md:text-5xl
+  text-2xl
+  md:text-4xl
   font-extrabold
   text-gray-900
   dark:text-white
@@ -164,8 +164,8 @@ export default function Hero() {
   Hello, I'm{" "}
 
   <span className="text-[#6F4E37] dark:text-[#C4A484]">
-  Kidusyared Liku
-</span>
+    Kidusyared Liku
+  </span>
 
 </h1>
 
