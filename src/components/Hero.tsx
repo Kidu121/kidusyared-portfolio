@@ -150,25 +150,24 @@ export default function Hero() {
     Available for Work
   </span>
 
+<h1
+  className="
+  mt-6
+  text-3xl
+  md:text-5xl
+  font-extrabold
+  text-gray-900
+  dark:text-white
+  "
+>
 
-  <h1
-    className="
-    mt-6
-    text-5xl
-    md:text-6xl
-    font-extrabold
-    text-gray-900
-    dark:text-white
-    "
-  >
+  Hello, I'm{" "}
 
-    Hello, I'm{" "}
+  <span className="text-[#6F4E37] dark:text-[#C4A484]">
+  Kidusyared Liku
+</span>
 
-    <span className="text-blue-600">
-      Kidusyared Liku
-    </span>
-
-  </h1>
+</h1>
 
 
 

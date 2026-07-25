@@ -109,24 +109,24 @@ export default function About() {
 
 
 
-          <h2
-            className="
-            mt-6
-            text-4xl
-            md:text-5xl
-            font-extrabold
-            text-gray-900
-            dark:text-white
-            "
-          >
+         <h2
+  className="
+  mt-6
+  text-3xl
+  md:text-4xl
+  font-extrabold
+  text-gray-900
+  dark:text-white
+  "
+>
 
-            Building AI-Powered{" "}
+  Building AI-Powered{" "}
 
-            <span className="text-blue-600">
-              Financial Solutions
-            </span>
+  <span className="text-blue-600">
+    Financial Solutions
+  </span>
 
-          </h2>
+</h2>
 
 
 
@@ -206,15 +206,15 @@ export default function About() {
 
 
           <h3
-          className="
-          text-4xl
-          font-extrabold
-          text-gray-900
-          dark:text-white
-          "
-          >
-            Kidusyared Liku
-          </h3>
+  className="
+  text-4xl
+  font-extrabold
+  text-amber-800
+  dark:text-amber-400
+  "
+>
+  Kidusyared Liku
+</h3>
 
 
 
