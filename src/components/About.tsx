@@ -204,11 +204,11 @@ export default function About() {
 
           <h3
           className="
-          text-4xl
-          font-extrabold
-          text-gray-900
-          dark:text-white
-          "
+  text-3xl
+  font-bold
+  text-gray-700
+  dark:text-gray-300
+"
           >
 
             Kidusyared Liku
@@ -228,7 +228,7 @@ export default function About() {
           "
           >
 
-            Software Developer
+            Software Developer | IT Professional
 
           </h4>
 
