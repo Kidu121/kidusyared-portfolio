@@ -6,137 +6,147 @@ import {
   Briefcase,
   GraduationCap,
   Code2,
+  CheckCircle,
 } from "lucide-react";
 
+import type { ReactNode } from "react";
 
 
 export default function About() {
-
   return (
-
     <section
       id="about"
-
       className="
-      py-16
-      sm:py-24
-
-      px-4
-      sm:px-6
-
-      bg-white
-
-      dark:bg-gray-950
-
+      relative
+      overflow-hidden
+      py-24
+      px-6
+      bg-gradient-to-br
+      from-white
+      via-blue-50
+      to-white
+      dark:from-gray-950
+      dark:via-slate-900
+      dark:to-gray-950
       transition-colors
       duration-300
       "
     >
 
+      {/* Blur Effects */}
 
-      <div
-        className="
-        max-w-7xl
-        mx-auto
-        w-full
-        "
-      >
+      <div className="
+      absolute
+      -top-20
+      -left-20
+      w-80
+      h-80
+      rounded-full
+      bg-blue-500/10
+      blur-3xl
+      ">
+      </div>
+
+
+      <div className="
+      absolute
+      bottom-0
+      right-0
+      w-96
+      h-96
+      rounded-full
+      bg-indigo-500/10
+      blur-3xl
+      ">
+      </div>
 
 
 
+      <div className="max-w-7xl mx-auto">
 
 
-        {/* Title */}
-
+        {/* Header */}
 
         <motion.div
-
           initial={{
             opacity:0,
             y:40
           }}
-
           whileInView={{
             opacity:1,
             y:0
           }}
-
-          transition={{
-            duration:0.6
-          }}
-
           viewport={{
             once:true
           }}
-
-          className="
-          text-center
-          mb-12
-          sm:mb-16
-          "
-
+          transition={{
+            duration:.6
+          }}
+          className="text-center mb-20"
         >
+
+
+          <span
+          className="
+          inline-block
+          px-5
+          py-2
+          rounded-full
+          bg-blue-100
+          dark:bg-blue-900/30
+          text-blue-700
+          dark:text-blue-400
+          font-semibold
+          text-sm
+          "
+          >
+
+            ABOUT ME
+
+          </span>
 
 
 
           <h2
-
-            className="
-            text-3xl
-            sm:text-4xl
-            md:text-5xl
-
-            font-bold
-
-            text-gray-900
-
-            dark:text-white
-            "
-
+          className="
+          mt-6
+          text-5xl
+          md:text-6xl
+          font-extrabold
+          text-gray-900
+          dark:text-white
+          "
           >
 
-            About
+            Building
 
             <span className="text-blue-600">
 
-              {" "}Me
+              {" "}Digital Products
 
             </span>
-
 
           </h2>
 
 
 
-
-
           <p
-
-            className="
-            text-gray-600
-
-            dark:text-gray-400
-
-            mt-4
-
-            px-2
-
-            max-w-2xl
-
-            mx-auto
-
-            text-sm
-            sm:text-base
-            "
-
+          className="
+          mt-6
+          max-w-3xl
+          mx-auto
+          text-lg
+          leading-8
+          text-gray-600
+          dark:text-gray-400
+          "
           >
 
-            Get to know more about my background,
-            experience and passion for technology.
-
+            Passionate about creating modern web applications,
+            AI-powered software and scalable digital solutions
+            using the latest technologies.
 
           </p>
-
 
 
         </motion.div>
@@ -145,277 +155,246 @@ export default function About() {
 
 
 
-
-
-
-
-        <div
-
-          className="
-          grid
-
-          grid-cols-1
-
-          md:grid-cols-2
-
-          gap-10
-
-          md:gap-12
-
-          items-center
-          "
-
-        >
-
-
-
-
-
+        <div className="
+        grid
+        lg:grid-cols-2
+        gap-16
+        items-center
+        ">
 
 
           {/* LEFT SIDE */}
 
 
-
           <motion.div
 
-            initial={{
-              opacity:0,
-              x:-50
-            }}
+          initial={{
+            opacity:0,
+            x:-60
+          }}
 
-            whileInView={{
-              opacity:1,
-              x:0
-            }}
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
 
-            transition={{
-              duration:0.7
-            }}
+          viewport={{
+            once:true
+          }}
 
-            viewport={{
-              once:true
-            }}
+          transition={{
+            duration:.7
+          }}
 
           >
 
 
 
+          <p className="
+          text-blue-600
+          font-semibold
+          mb-4
+          ">
 
+            Hello 👋 I'm
 
-            <h3
+          </p>
 
-              className="
-              text-2xl
 
-              sm:text-3xl
 
-              font-bold
+          <h3
+          className="
+          text-4xl
+          font-extrabold
+          text-gray-900
+          dark:text-white
+          "
+          >
 
-              text-gray-800
+            Kidusyared Liku
 
-              dark:text-gray-200
+          </h3>
 
-              mb-6
-              "
 
-            >
 
-              IT Graduate &
 
+          <h4
+          className="
+          mt-3
+          text-2xl
+          font-bold
+          text-gray-700
+          dark:text-gray-300
+          "
+          >
 
-              <span className="text-blue-600">
+            Software Developer
 
-                {" "}Software Developer
+          </h4>
 
-              </span>
 
 
-            </h3>
 
+          <p
+          className="
+          mt-8
+          leading-8
+          text-lg
+          text-gray-600
+          dark:text-gray-400
+          "
+          >
 
+            I am an Information Technology graduate and software developer
+            with practical experience building responsive web applications
+            and digital financial solutions.
 
+          </p>
 
 
 
+          <p
+          className="
+          mt-6
+          leading-8
+          text-lg
+          text-gray-600
+          dark:text-gray-400
+          "
+          >
 
-            <p
+            I specialize in React, TypeScript, Firebase and AI-powered
+            applications, focusing on clean code, user experience
+            and scalable software architecture.
 
-              className="
-              text-gray-600
+          </p>
 
-              dark:text-gray-400
 
-              leading-7
 
-              sm:leading-8
+          {/* Stats */}
 
-              text-base
+          <div className="
+          grid
+          grid-cols-4
+          gap-6
+          mt-12
+          ">
 
-              sm:text-lg
 
-              mb-6
-              "
+            <Stat
+            value="3+"
+            title="Projects"
+            />
 
-            >
 
-              I am an Information Technology graduate passionate about
-              creating modern digital solutions. I have experience working
-              with digital financial systems and developing web applications.
+            <Stat
+            value="1+"
+            title="Years"
+            />
 
 
-            </p>
+            <Stat
+            value="10+"
+            title="Skills"
+            />
 
 
+            <Stat
+            value="100%"
+            title="Dedication"
+            />
 
 
+          </div>
 
 
 
 
-            <p
 
-              className="
-              text-gray-600
+          {/* Information Cards */}
 
-              dark:text-gray-400
+          <div className="
+          grid
+          sm:grid-cols-2
+          gap-5
+          mt-12
+          ">
 
-              leading-7
 
-              sm:leading-8
+          <InfoCard
 
-              text-base
+          icon={
+            <MapPin
+            className="text-blue-600"
+            />
+          }
 
-              sm:text-lg
-              "
+          title="Location"
 
-            >
+          value="Ethiopia"
 
-              My goal is to build scalable software solutions that solve
-              real-world problems using modern technologies like React,
-              TypeScript, Firebase and Artificial Intelligence.
+          />
 
 
-            </p>
 
+          <InfoCard
 
+          icon={
+            <Mail
+            className="text-blue-600"
+            />
+          }
 
+          title="Email"
 
+          value="kidusyaredlik@gmail.com"
 
+          />
 
 
 
+          <InfoCard
 
-            {/* Info Cards */}
+          icon={
+            <Briefcase
+            className="text-blue-600"
+            />
+          }
 
+          title="Experience"
 
-            <div
+          value="1+ Years"
 
-              className="
-              grid
+          />
 
-              grid-cols-1
 
-              sm:grid-cols-2
 
-              gap-4
+          <InfoCard
 
-              sm:gap-5
+          icon={
+            <GraduationCap
+            className="text-blue-600"
+            />
+          }
 
-              mt-8
+          title="Education"
 
-              sm:mt-10
-              "
+          value="BSc Information Technology"
 
-            >
+          />
 
 
 
-
-              <InfoCard
-
-                icon={
-                  <MapPin
-                    className="text-blue-600"
-                  />
-                }
-
-                title="Location"
-
-                value="Ethiopia"
-
-              />
-
-
-
-              <InfoCard
-
-                icon={
-                  <Mail
-                    className="text-blue-600"
-                  />
-                }
-
-                title="Email"
-
-                value="kidusyaredlik@gmail.com"
-
-              />
-
-
-
-              <InfoCard
-
-                icon={
-                  <Briefcase
-                    className="text-blue-600"
-                  />
-                }
-
-                title="Experience"
-
-                value="1+ Years"
-
-              />
-
-
-
-              <InfoCard
-
-                icon={
-                  <GraduationCap
-                    className="text-blue-600"
-                  />
-                }
-
-                title="Education"
-
-                value="Information Technology"
-
-              />
-
-
-
-            </div>
-
-
-
+          </div>
 
 
           </motion.div>
-          
-
-
-
-          {/* RIGHT SIDE */}
-
-
+                    {/* RIGHT SIDE */}
 
           <motion.div
-
             initial={{
               opacity:0,
-              x:50
+              x:60
             }}
 
             whileInView={{
@@ -423,79 +402,51 @@ export default function About() {
               x:0
             }}
 
-            transition={{
-              duration:0.7
-            }}
-
             viewport={{
               once:true
             }}
 
-            className="
-            grid
-            gap-6
-            "
+            transition={{
+              duration:.7
+            }}
 
+            className="space-y-8"
           >
 
 
+            {/* My Focus */}
 
+            <motion.div
 
+            whileHover={{
+              y:-8,
+              scale:1.02
+            }}
 
-            {/* Focus Card */}
-
-
-            <div
-
-              className="
-              p-6
-              sm:p-8
-
-              rounded-3xl
-
-              bg-gradient-to-br
-
-              from-blue-600
-
-              to-indigo-600
-
-              text-white
-
-              shadow-xl
-              "
+            className="
+            rounded-3xl
+            p-8
+            bg-gradient-to-r
+            from-blue-600
+            to-indigo-600
+            text-white
+            shadow-2xl
+            "
 
             >
 
-
-
               <Code2
-
-                size={38}
-
-                className="
-                mb-5
-                sm:w-[45px]
-                sm:h-[45px]
-                "
-
+              size={45}
+              className="mb-6"
               />
 
 
-
-
-
               <h3
-
-                className="
-                text-xl
-
-                sm:text-2xl
-
-                font-bold
-
-                mb-4
-                "
-
+              className="
+              text-3xl
+              font-bold
+              mb-5
+              "
               >
 
                 My Focus
@@ -504,77 +455,60 @@ export default function About() {
 
 
 
-
-
-
               <p
-
-                className="
-                leading-7
-
-                text-sm
-
-                sm:text-base
-                "
-
+              className="
+              leading-8
+              text-blue-100
+              "
               >
 
-                Building responsive web applications,
-                AI-powered solutions and fintech products
-                that create meaningful impact.
-
+                I build modern web applications,
+                AI-powered software, and fintech solutions
+                that deliver excellent user experiences
+                while solving real business problems.
 
               </p>
 
 
-
-            </div>
-
+            </motion.div>
 
 
 
 
 
+            {/* Career Goal */}
 
 
+            <motion.div
 
-            {/* Career Goal Card */}
+            whileHover={{
+              y:-8,
+              scale:1.02
+            }}
 
-
-            <div
-
-              className="
-              p-6
-
-              sm:p-8
-
-              rounded-3xl
-
-              bg-gray-900
-
-              dark:bg-black
-
-              text-white
-
-              shadow-xl
-              "
+            className="
+            rounded-3xl
+            p-8
+            bg-white/70
+            dark:bg-gray-900/80
+            backdrop-blur-xl
+            border
+            border-gray-200
+            dark:border-gray-700
+            shadow-xl
+            "
 
             >
 
 
-
               <h3
-
-                className="
-                text-xl
-
-                sm:text-2xl
-
-                font-bold
-
-                mb-5
-                "
-
+              className="
+              text-3xl
+              font-bold
+              mb-6
+              text-gray-900
+              dark:text-white
+              "
               >
 
                 Career Goal
@@ -582,45 +516,127 @@ export default function About() {
               </h3>
 
 
-
-
-
-
               <p
-
-                className="
-                text-gray-300
-
-                leading-7
-
-                text-sm
-
-                sm:text-base
-                "
-
+              className="
+              text-gray-600
+              dark:text-gray-400
+              leading-8
+              "
               >
 
-                To join a professional technology team where
-                I can contribute my skills, learn continuously,
-                and build innovative software solutions.
-
+                My goal is to work with innovative companies,
+                contribute to impactful software products,
+                continuously improve my technical skills,
+                and create solutions that make people's lives easier.
 
               </p>
 
 
+            </motion.div>
 
 
-            </div>
 
 
 
+
+
+            {/* Specialization */}
+
+
+            <motion.div
+
+            whileHover={{
+              y:-8,
+              scale:1.02
+            }}
+
+            className="
+            rounded-3xl
+            p-8
+            bg-white
+            dark:bg-gray-900
+            border
+            border-gray-200
+            dark:border-gray-700
+            shadow-xl
+            "
+
+            >
+
+
+
+              <h3
+              className="
+              text-3xl
+              font-bold
+              mb-8
+              text-gray-900
+              dark:text-white
+              "
+              >
+
+                What I Specialize In
+
+              </h3>
+
+
+
+
+              <div className="space-y-5">
+
+
+              {[
+                "React Development",
+                "TypeScript",
+                "Firebase Integration",
+                "REST API Integration",
+                "AI Applications",
+                "Responsive Web Design",
+
+              ].map((item)=>(
+
+
+                <div
+                key={item}
+                className="
+                flex
+                items-center
+                gap-4
+                "
+                >
+
+                  <CheckCircle
+                  size={22}
+                  className="text-blue-600"
+                  />
+
+
+                  <span
+                  className="
+                  text-gray-700
+                  dark:text-gray-300
+                  text-lg
+                  "
+                  >
+
+                    {item}
+
+                  </span>
+
+
+                </div>
+
+
+              ))}
+
+
+              </div>
+
+
+            </motion.div>
 
 
           </motion.div>
-
-
-
-
 
 
         </div>
@@ -630,9 +646,89 @@ export default function About() {
 
 
     </section>
-
-
   );
+}
+
+
+
+
+
+
+
+// ==========================
+// STAT COMPONENT
+// ==========================
+
+
+function Stat({
+  value,
+  title,
+
+}:{
+  value:string;
+  title:string;
+
+}){
+
+
+return (
+
+<motion.div
+
+whileHover={{
+  y:-5,
+  scale:1.05
+}}
+
+className="
+text-center
+rounded-2xl
+bg-white/70
+dark:bg-gray-900/70
+backdrop-blur-xl
+border
+border-gray-200
+dark:border-gray-700
+shadow-lg
+py-6
+"
+
+>
+
+
+<h3
+className="
+text-4xl
+font-extrabold
+text-blue-600
+"
+>
+
+{value}
+
+</h3>
+
+
+
+<p
+className="
+mt-2
+text-gray-600
+dark:text-gray-400
+"
+>
+
+{title}
+
+</p>
+
+
+
+</motion.div>
+
+
+);
+
 
 }
 
@@ -642,112 +738,114 @@ export default function About() {
 
 
 
+// ==========================
+// INFO CARD COMPONENT
+// ==========================
+
+
 function InfoCard({
 
-  icon,
-
-  title,
-
-  value,
+icon,
+title,
+value,
 
 }:{
 
-  icon: React.ReactNode;
+icon:ReactNode;
+title:string;
+value:string;
 
-  title:string;
-
-  value:string;
-
-}) {
+}){
 
 
-  return (
+return (
+
+<motion.div
+
+whileHover={{
+ y:-6,
+ scale:1.03
+}}
+
+className="
+flex
+items-center
+gap-4
+rounded-2xl
+p-5
+bg-white/70
+dark:bg-gray-900/70
+backdrop-blur-xl
+border
+border-gray-200
+dark:border-gray-700
+shadow-lg
+transition-all
+duration-300
+"
+
+>
 
 
-    <div
+<div
 
-      className="
-      flex
+className="
+w-12
+h-12
+rounded-xl
+bg-blue-100
+dark:bg-blue-900/30
+flex
+items-center
+justify-center
+"
 
-      items-center
+>
 
-      gap-3
+{icon}
 
-      p-3
-
-      sm:p-4
-
-      rounded-xl
-
-      bg-blue-50
-
-      dark:bg-gray-900
-      "
-
-    >
-
-
-
-      {icon}
-
-
-
-
-      <div>
-
-
-        <p
-
-          className="
-          text-sm
-
-          text-gray-500
-
-          dark:text-gray-400
-          "
-
-        >
-
-          {title}
-
-
-        </p>
+</div>
 
 
 
 
+<div>
 
-        <p
+<p
+className="
+text-sm
+text-gray-500
+dark:text-gray-400
+"
+>
 
-          className="
-          font-semibold
+{title}
 
-          text-gray-900
-
-          dark:text-white
-
-          text-sm
-
-          sm:text-base
-          "
-
-        >
-
-          {value}
-
-
-        </p>
+</p>
 
 
 
-      </div>
+<h4
+className="
+font-semibold
+text-gray-900
+dark:text-white
+"
+>
+
+{value}
+
+</h4>
+
+
+</div>
 
 
 
-    </div>
+</motion.div>
 
 
-  );
+);
 
 
 }
