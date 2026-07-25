@@ -9,12 +9,12 @@ import {
   Send,
   Loader2,
   CheckCircle,
-  Download,
 } from "lucide-react";
 
 import {
   FaGithub,
   FaLinkedin,
+  FaInstagram,
 } from "react-icons/fa";
 
 
@@ -89,9 +89,7 @@ export default function Contact() {
       ">
 
 
-
         {/* Contact Information */}
-
 
         <motion.div
 
@@ -115,7 +113,6 @@ export default function Contact() {
 
         >
 
-
           <h2 className="
           text-4xl
           font-bold
@@ -123,9 +120,7 @@ export default function Contact() {
           text-gray-900
           dark:text-white
           ">
-
             Contact Me
-
           </h2>
 
 
@@ -135,13 +130,9 @@ export default function Contact() {
           dark:text-gray-400
           mb-8
           ">
-
             Have a project or opportunity?
             Feel free to send me a message.
-
           </p>
-
-
 
 
 
@@ -149,7 +140,6 @@ export default function Contact() {
 
 
             <div className="flex items-center gap-4">
-
               <Mail className="text-blue-600"/>
 
               <span className="
@@ -158,15 +148,11 @@ export default function Contact() {
               ">
                 kidusyaredlik@gmail.com
               </span>
-
             </div>
 
 
 
-
-
             <div className="flex items-center gap-4">
-
               <Phone className="text-blue-600"/>
 
               <span className="
@@ -176,15 +162,11 @@ export default function Contact() {
                 +251 927209931 ,
                 +251923519111
               </span>
-
             </div>
 
 
 
-
-
             <div className="flex items-center gap-4">
-
               <MapPin className="text-blue-600"/>
 
               <span className="
@@ -193,7 +175,6 @@ export default function Contact() {
               ">
                 Addis Ababa, Ethiopia
               </span>
-
             </div>
 
 
@@ -201,13 +182,9 @@ export default function Contact() {
 
 
 
-
-
-
           {/* Social Links */}
 
           <div className="mt-10">
-
 
             <h3 className="
             text-xl
@@ -220,13 +197,11 @@ export default function Contact() {
             </h3>
 
 
-
             <div className="
             flex
             flex-wrap
             gap-4
             ">
-
 
 
               {/* LinkedIn */}
@@ -248,15 +223,9 @@ export default function Contact() {
                 transition
                 "
               >
-
                 <FaLinkedin size={20}/>
-
                 LinkedIn
-
               </a>
-
-
-
 
 
 
@@ -279,15 +248,9 @@ export default function Contact() {
                 transition
                 "
               >
-
                 <FaGithub size={20}/>
-
                 GitHub
-
               </a>
-
-
-
 
 
 
@@ -310,24 +273,18 @@ export default function Contact() {
                 transition
                 "
               >
-
                 <Send size={20}/>
-
                 Telegram
-
               </a>
 
 
 
-
-
-
-
-              {/* Download CV */}
+              {/* Instagram */}
 
               <a
-                href="/Kidus-Yared-CV.pdf"
-                download
+                href="https://instagram.com/YOUR_USERNAME"
+                target="_blank"
+                rel="noreferrer"
                 className="
                 flex
                 items-center
@@ -335,36 +292,24 @@ export default function Contact() {
                 px-4
                 py-2
                 rounded-lg
-                bg-green-600
+                bg-pink-600
                 text-white
-                hover:bg-green-700
+                hover:bg-pink-700
                 transition
                 "
               >
-
-                <Download size={20}/>
-
-                Download CV
-
+                <FaInstagram size={20}/>
+                Instagram
               </a>
 
 
             </div>
 
-
           </div>
 
 
         </motion.div>
-
-
-
-
-
-
-
-
-        {/* Contact Form */}
+                {/* Contact Form */}
 
 
         <motion.form
@@ -410,9 +355,13 @@ export default function Contact() {
 
 
           <input
+
             type="text"
+
             name="user_name"
+
             placeholder="Your Name"
+
             required
 
             className="
@@ -428,15 +377,21 @@ export default function Contact() {
             dark:text-white
             outline-none
             "
+
           />
+
 
 
 
 
           <input
+
             type="email"
+
             name="user_email"
+
             placeholder="Your Email"
+
             required
 
             className="
@@ -452,7 +407,10 @@ export default function Contact() {
             dark:text-white
             outline-none
             "
+
           />
+
+
 
 
 
@@ -488,6 +446,7 @@ export default function Contact() {
 
 
 
+
           <button
 
             disabled={loading}
@@ -512,6 +471,7 @@ export default function Contact() {
             {loading ? (
 
               <>
+
                 <Loader2 className="animate-spin"/>
 
                 Sending...
@@ -539,6 +499,7 @@ export default function Contact() {
 
 
 
+
           {success && (
 
             <div className="
@@ -556,6 +517,8 @@ export default function Contact() {
             </div>
 
           )}
+
+
 
 
 
