@@ -9,6 +9,9 @@ import {
   Send,
   Loader2,
   CheckCircle,
+  Github,
+  Linkedin,
+  Download,
 } from "lucide-react";
 
 
@@ -162,6 +165,7 @@ export default function Contact() {
 
 
 
+
             <div className="flex items-center gap-4">
 
               <Phone className="text-blue-600"/>
@@ -175,6 +179,7 @@ export default function Contact() {
               </span>
 
             </div>
+
 
 
 
@@ -198,6 +203,162 @@ export default function Contact() {
 
 
 
+
+
+          {/* Social Links */}
+
+
+          <div className="mt-10">
+
+
+            <h3 className="
+            text-xl
+            font-semibold
+            mb-5
+            text-gray-900
+            dark:text-white
+            ">
+              Connect With Me
+            </h3>
+
+
+
+            <div className="
+            flex
+            flex-wrap
+            gap-4
+            ">
+
+
+
+              {/* LinkedIn */}
+
+              <a
+                href="https://www.linkedin.com/in/https://www.linkedin.com/in/kidusyared-liku-975396337"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-2
+                rounded-lg
+                bg-blue-600
+                text-white
+                hover:bg-blue-700
+                transition
+                "
+              >
+
+                <Linkedin size={20}/>
+
+                LinkedIn
+
+              </a>
+
+
+
+
+
+              {/* GitHub */}
+
+              <a
+                href="https://github.com/Kidu121"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-2
+                rounded-lg
+                bg-gray-900
+                text-white
+                hover:bg-gray-700
+                transition
+                "
+              >
+
+                <Github size={20}/>
+
+                GitHub
+
+              </a>
+
+
+
+
+
+
+              {/* Telegram */}
+
+              <a
+                href="https://t.me/https://t.me/Bobby_cr"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-2
+                rounded-lg
+                bg-sky-500
+                text-white
+                hover:bg-sky-600
+                transition
+                "
+              >
+
+                <Send size={20}/>
+
+                Telegram
+
+              </a>
+
+
+
+
+
+
+              {/* Download CV */}
+
+              <a
+                href="/Kidus-Yared-CV.pdf"
+                download
+                className="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-2
+                rounded-lg
+                bg-green-600
+                text-white
+                hover:bg-green-700
+                transition
+                "
+              >
+
+                <Download size={20}/>
+
+                Download CV
+
+              </a>
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+
+
         </motion.div>
 
 
@@ -206,7 +367,9 @@ export default function Contact() {
 
 
 
-        {/* Form */}
+
+
+        {/* Contact Form */}
 
 
 
@@ -253,6 +416,7 @@ export default function Contact() {
 
 
 
+
           <input
 
             type="text"
@@ -262,7 +426,6 @@ export default function Contact() {
             placeholder="Your Name"
 
             required
-
 
             className="
             w-full
@@ -279,6 +442,7 @@ export default function Contact() {
             "
 
           />
+
 
 
 
@@ -295,7 +459,6 @@ export default function Contact() {
 
             required
 
-
             className="
             w-full
             p-3
@@ -311,6 +474,7 @@ export default function Contact() {
             "
 
           />
+
 
 
 
@@ -327,7 +491,6 @@ export default function Contact() {
 
             required
 
-
             className="
             w-full
             p-3
@@ -343,6 +506,7 @@ export default function Contact() {
             "
 
           />
+
 
 
 
@@ -395,6 +559,7 @@ export default function Contact() {
 
 
           </button>
+
 
 
 
