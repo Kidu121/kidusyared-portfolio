@@ -239,7 +239,7 @@ export default function Hero() {
     products and intelligent solutions that solve real-world problems.
 
   </p>
-
+</div>
 
 
 
