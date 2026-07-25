@@ -34,7 +34,7 @@ const projects = [
     description:
       "An AI-powered financial assistant and Telegram bot designed to provide financial insights and smart digital support.",
 
-    image: "/projects/digaf.png",
+    image: "/digaf.png",
 
     technologies: [
       "Node.js",
@@ -51,13 +51,14 @@ const projects = [
   },
 
 
+
   {
     title: "Personal Portfolio",
 
     description:
       "A responsive developer portfolio website showcasing my skills, projects and professional experience.",
 
-    image: "/projects/profile.png",
+    image: "/profile.png",
 
     technologies: [
       "React",
@@ -66,9 +67,10 @@ const projects = [
     ],
 
     github:
-      "https://github.com/Kidu121",
+      "https://github.com/Kidu121/kidusyared-portfolio",
 
-    demo: "",
+    demo:
+      "https://kidusyared-portfolio-gilt.vercel.app/",
   },
 
 ];
@@ -85,8 +87,7 @@ export default function Projects() {
       py-24 px-6
       bg-white
       dark:bg-gray-950
-      transition-colors
-      duration-300
+      transition-colors duration-300
       "
     >
 
@@ -94,7 +95,6 @@ export default function Projects() {
 
 
         <motion.div
-
           initial={{
             opacity:0,
             y:40
@@ -114,13 +114,11 @@ export default function Projects() {
           }}
 
           className="text-center mb-16"
-
         >
 
           <h2
             className="
-            text-4xl
-            md:text-5xl
+            text-4xl md:text-5xl
             font-bold
             text-gray-900
             dark:text-white
@@ -205,6 +203,8 @@ export default function Projects() {
             >
 
 
+              {/* Image */}
+
               <div
                 className="
                 h-52
@@ -231,8 +231,7 @@ export default function Projects() {
                   h-full
                   object-cover
                   hover:scale-110
-                  transition
-                  duration-500
+                  transition duration-500
                   "
 
                 />
@@ -241,6 +240,9 @@ export default function Projects() {
 
 
 
+
+
+              {/* Content */}
 
               <div className="p-6">
 
@@ -277,12 +279,10 @@ export default function Projects() {
 
 
 
+
                 <div
                   className="
-                  flex
-                  flex-wrap
-                  gap-2
-                  mb-6
+                  flex flex-wrap gap-2 mb-6
                   "
                 >
 
@@ -293,8 +293,7 @@ export default function Projects() {
                       key={tech}
 
                       className="
-                      px-3
-                      py-1
+                      px-3 py-1
                       rounded-full
                       text-sm
                       bg-blue-50
@@ -317,6 +316,7 @@ export default function Projects() {
 
 
 
+
                 <div className="flex gap-4">
 
 
@@ -329,11 +329,8 @@ export default function Projects() {
                     rel="noopener noreferrer"
 
                     className="
-                    flex
-                    items-center
-                    gap-2
-                    px-4
-                    py-2
+                    flex items-center gap-2
+                    px-4 py-2
                     rounded-lg
                     border
                     border-gray-300
@@ -357,38 +354,32 @@ export default function Projects() {
 
 
 
-                  {project.demo && (
+                  <a
 
-                    <a
+                    href={project.demo}
 
-                      href={project.demo}
+                    target="_blank"
 
-                      target="_blank"
+                    rel="noopener noreferrer"
 
-                      rel="noopener noreferrer"
+                    className="
+                    flex items-center gap-2
+                    bg-blue-600
+                    text-white
+                    px-4 py-2
+                    rounded-lg
+                    hover:bg-blue-700
+                    transition
+                    "
 
-                      className="
-                      flex
-                      items-center
-                      gap-2
-                      bg-blue-600
-                      text-white
-                      px-4
-                      py-2
-                      rounded-lg
-                      hover:bg-blue-700
-                      transition
-                      "
+                  >
 
-                    >
+                    <ExternalLink size={18}/>
 
-                      <ExternalLink size={18}/>
+                    Demo
 
-                      Demo
+                  </a>
 
-                    </a>
-
-                  )}
 
 
                 </div>
