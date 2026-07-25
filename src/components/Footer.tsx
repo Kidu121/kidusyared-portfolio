@@ -67,8 +67,7 @@ export default function Footer() {
             "
           >
 
-            Full Stack Developer | AI Enthusiast
-
+Full Stack Developer | AI & Digital Finance Enthusiast
           </p>
 
 
