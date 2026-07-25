@@ -34,7 +34,7 @@ const projects = [
     description:
       "An AI-powered financial assistant and Telegram bot designed to provide financial insights and smart digital support.",
 
-    image: "/digaf.png",
+    image: "",
 
     technologies: [
       "Node.js",
