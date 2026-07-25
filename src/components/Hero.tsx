@@ -131,189 +131,114 @@ export default function Hero() {
 
 
 
-          <div
-            className="
-            inline-flex
-            items-center
-            gap-2
+          <div>
+  <span
+    className="
+    inline-flex
+    items-center
+    px-4
+    py-2
+    rounded-full
+    bg-green-100
+    dark:bg-green-900/30
+    text-green-700
+    dark:text-green-400
+    font-semibold
+    text-sm
+    "
+  >
+    Available for Work
+  </span>
+
+
+  <h1
+    className="
+    mt-6
+    text-5xl
+    md:text-6xl
+    font-extrabold
+    text-gray-900
+    dark:text-white
+    "
+  >
+
+    Hello, I'm{" "}
+
+    <span className="text-blue-600">
+      Kidusyared Liku
+    </span>
+
+  </h1>
+
+
+
+  <h2
+    className="
+    mt-4
+    text-2xl
+    md:text-3xl
+    font-bold
+    text-gray-700
+    dark:text-gray-300
+    "
+  >
+
+    Software Developer | IT Professional
+
+  </h2>
+
+
+
+  <p
+    className="
+    mt-4
+    text-lg
+    font-semibold
+    text-blue-600
+    "
+  >
+
+    React • TypeScript • Firebase • AI • FinTech
+
+  </p>
+
+
+
+  <p
+    className="
+    mt-6
+    max-w-2xl
+    text-lg
+    leading-8
+    text-gray-600
+    dark:text-gray-400
+    "
+  >
+
+    Information Technology Graduate with a background in software
+    development and digital financial solutions.
+
+  </p>
+
+
+
+  <p
+    className="
+    mt-5
+    max-w-2xl
+    text-lg
+    leading-8
+    text-gray-600
+    dark:text-gray-400
+    "
+  >
 
-            bg-green-100
-            dark:bg-green-900/30
+    I build modern, responsive, and user-friendly web applications
+    using React, TypeScript, Firebase, and AI technologies. With a
+    strong IT foundation, I focus on creating scalable digital
+    products and intelligent solutions that solve real-world problems.
 
-            text-green-700
-            dark:text-green-400
-
-            px-4
-            py-2
-
-            rounded-full
-            mb-6
-
-            font-medium
-
-            text-sm
-            sm:text-base
-            "
-          >
-
-            <span
-              className="
-              w-2
-              h-2
-              rounded-full
-              bg-green-500
-              animate-pulse
-              "
-            />
-
-            Available for Work
-
-          </div>
-
-
-
-
-
-          <p
-            className="
-            text-blue-600
-            text-base
-            sm:text-lg
-
-            font-semibold
-            mb-4
-            "
-          >
-
-            Hello, I'm
-
-          </p>
-
-
-
-
-
-          <h1
-            className="
-            text-4xl
-            sm:text-5xl
-            md:text-7xl
-
-            font-extrabold
-            leading-tight
-
-            text-gray-900
-            dark:text-white
-            "
-          >
-
-            Kidusyared
-
-            <span className="text-blue-600">
-
-              {" "}Liku
-
-            </span>
-
-          </h1>
-
-
-
-
-
-
-
-          <div className="mt-6">
-
-
-            <h2
-              className="
-              text-2xl
-              sm:text-3xl
-
-              font-bold
-
-              text-gray-800
-              dark:text-gray-200
-              "
-            >
-
-              Software Developer
-
-            </h2>
-
-
-
-
-            <p
-              className="
-              text-blue-600
-
-              font-semibold
-
-              mt-2
-
-              text-base
-              sm:text-xl
-              "
-            >
-
-              React • TypeScript • Firebase • FinTech
-
-
-            </p>
-
-
-
-
-            <p
-              className="
-              text-gray-600
-              dark:text-gray-400
-
-              mt-2
-
-              text-base
-              sm:text-lg
-              "
-            >
-
-              IT Graduate with experience in Digital Financial Solutions
-
-            </p>
-
-
-          </div>
-
-
-
-
-
-
-
-          <p
-            className="
-            mt-8
-
-            text-base
-            sm:text-lg
-
-            text-gray-600
-            dark:text-gray-400
-
-            leading-8
-
-            max-w-xl
-            "
-          >
-
-            I build modern, responsive and user-friendly web applications
-            using React, TypeScript, Firebase and AI technologies.
-            I enjoy solving real-world problems and creating scalable
-            digital solutions.
-
-          </p>
-
+  </p>
 
 
 

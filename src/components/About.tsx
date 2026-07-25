@@ -227,7 +227,7 @@ export default function About() {
           text-blue-600
           "
           >
-            AI & FinTech Developer | Software Engineer
+        IT Professional | Software Engineer
           </h4>
 
 
