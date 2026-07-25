@@ -118,11 +118,11 @@ export default function About() {
           "
           >
 
-            Building
+            Building AI-Powered 
 
             <span className="text-blue-600">
 
-              {" "}Digital Products
+              {" "}Financial Solutions
 
             </span>
 
@@ -142,9 +142,9 @@ export default function About() {
           "
           >
 
-            Passionate about creating modern web applications,
-            AI-powered software and scalable digital solutions
-            using the latest technologies.
+            IT professional passionate about creating modern web applications, 
+            intelligent AI systems, and digital finance solutions. 
+            Focused on building scalable technologies that improve financial services through automation and innovation.
 
           </p>
 
