@@ -33,97 +33,97 @@ export default function About() {
       "
     >
 
-      {/* Blur Effects */}
+      {/* Background Blur */}
 
-      <div className="
-      absolute
-      -top-20
-      -left-20
-      w-80
-      h-80
-      rounded-full
-      bg-blue-500/10
-      blur-3xl
-      ">
-      </div>
+      <div
+        className="
+        absolute
+        -top-20
+        -left-20
+        w-80
+        h-80
+        rounded-full
+        bg-blue-500/10
+        blur-3xl
+        "
+      />
 
-
-      <div className="
-      absolute
-      bottom-0
-      right-0
-      w-96
-      h-96
-      rounded-full
-      bg-indigo-500/10
-      blur-3xl
-      ">
-      </div>
-
+      <div
+        className="
+        absolute
+        bottom-0
+        right-0
+        w-96
+        h-96
+        rounded-full
+        bg-indigo-500/10
+        blur-3xl
+        "
+      />
 
 
       <div className="max-w-7xl mx-auto">
 
 
-        {/* Header */}
+        {/* HEADER */}
 
         <motion.div
           initial={{
-            opacity:0,
-            y:40
+            opacity: 0,
+            y: 40,
           }}
+
           whileInView={{
-            opacity:1,
-            y:0
+            opacity: 1,
+            y: 0,
           }}
+
           viewport={{
-            once:true
+            once: true,
           }}
+
           transition={{
-            duration:.6
+            duration: 0.6,
           }}
+
           className="text-center mb-20"
         >
 
 
           <span
-          className="
-          inline-block
-          px-5
-          py-2
-          rounded-full
-          bg-blue-100
-          dark:bg-blue-900/30
-          text-blue-700
-          dark:text-blue-400
-          font-semibold
-          text-sm
-          "
+            className="
+            inline-block
+            px-4
+            py-1.5
+            rounded-full
+            bg-blue-100
+            dark:bg-blue-900/30
+            text-blue-700
+            dark:text-blue-400
+            font-semibold
+            text-sm
+            "
           >
-
             ABOUT ME
-
           </span>
 
 
 
           <h2
-          className="
-          mt-6
-          text-5xl
-          md:text-6xl
-          font-extrabold
-          text-gray-900
-          dark:text-white
-          "
+            className="
+            mt-6
+            text-4xl
+            md:text-5xl
+            font-extrabold
+            text-gray-900
+            dark:text-white
+            "
           >
 
-            Building AI-Powered 
+            Building AI-Powered{" "}
 
             <span className="text-blue-600">
-
-              {" "}Financial Solutions
-
+              Financial Solutions
             </span>
 
           </h2>
@@ -131,20 +131,21 @@ export default function About() {
 
 
           <p
-          className="
-          mt-6
-          max-w-3xl
-          mx-auto
-          text-lg
-          leading-8
-          text-gray-600
-          dark:text-gray-400
-          "
+            className="
+            mt-6
+            max-w-3xl
+            mx-auto
+            text-lg
+            leading-8
+            text-gray-600
+            dark:text-gray-400
+            "
           >
 
-            IT professional passionate about creating modern web applications, 
-            intelligent AI systems, and digital finance solutions. 
-            Focused on building scalable technologies that improve financial services through automation and innovation.
+            IT professional passionate about creating modern web
+            applications, intelligent AI systems, and digital finance
+            solutions. Focused on building scalable technologies that
+            improve financial services through automation and innovation.
 
           </p>
 
@@ -155,18 +156,21 @@ export default function About() {
 
 
 
-        <div className="
-        grid
-        lg:grid-cols-2
-        gap-16
-        items-center
-        ">
+        <div
+          className="
+          grid
+          lg:grid-cols-2
+          gap-16
+          items-center
+          "
+        >
 
 
-          {/* LEFT SIDE */}
+
+        {/* LEFT SIDE */}
 
 
-          <motion.div
+        <motion.div
 
           initial={{
             opacity:0,
@@ -186,33 +190,30 @@ export default function About() {
             duration:.7
           }}
 
-          >
+        >
 
 
-
-          <p className="
+          <p
+          className="
           text-blue-600
           font-semibold
           mb-4
-          ">
-
+          "
+          >
             Hello 👋 I'm
-
           </p>
 
 
 
           <h3
           className="
-  text-3xl
-  font-bold
-  text-gray-700
-  dark:text-gray-300
-"
+          text-4xl
+          font-extrabold
+          text-gray-900
+          dark:text-white
+          "
           >
-
             Kidusyared Liku
-
           </h3>
 
 
@@ -223,13 +224,10 @@ export default function About() {
           mt-3
           text-2xl
           font-bold
-          text-gray-700
-          dark:text-gray-300
+          text-blue-600
           "
           >
-
-            Software Developer | IT Professional
-
+            AI & FinTech Developer | Software Engineer
           </h4>
 
 
@@ -245,11 +243,13 @@ export default function About() {
           "
           >
 
-            I am an Information Technology graduate and software developer
-            with practical experience building responsive web applications
-            and digital financial solutions.
+            I am an Information Technology graduate and software
+            developer focused on building modern web applications,
+            AI-powered systems, and digital financial solutions
+            that solve real-world problems.
 
           </p>
+
 
 
 
@@ -264,25 +264,28 @@ export default function About() {
           >
 
             I specialize in React, TypeScript, Firebase and AI-powered
-            applications, focusing on clean code, user experience
+            applications, focusing on clean code, great user experience,
             and scalable software architecture.
 
           </p>
 
 
 
-          {/* Stats */}
+          {/* STATS */}
 
-          <div className="
+          <div
+          className="
           grid
-          grid-cols-4
+          grid-cols-2
+          md:grid-cols-4
           gap-6
           mt-12
-          ">
+          "
+          >
 
 
             <Stat
-            value="3+"
+            value="5+"
             title="Projects"
             />
 
@@ -295,348 +298,379 @@ export default function About() {
 
             <Stat
             value="10+"
-            title="Skills"
+            title="Technologies"
             />
 
 
             <Stat
             value="100%"
-            title="Dedication"
+            title="Passion"
             />
 
 
           </div>
 
 
+          {/* CONTINUE IN PART 2 */}
+          
+          {/* INFORMATION CARDS */}
 
-
-
-          {/* Information Cards */}
-
-          <div className="
+          <div
+          className="
           grid
           sm:grid-cols-2
           gap-5
           mt-12
-          ">
+          "
+          >
 
 
-          <InfoCard
+            <InfoCard
 
-          icon={
-            <MapPin
-            className="text-blue-600"
+            icon={
+              <MapPin
+              className="text-blue-600"
+              />
+            }
+
+            title="Location"
+
+            value="Ethiopia"
+
             />
-          }
-
-          title="Location"
-
-          value="Ethiopia"
-
-          />
 
 
 
-          <InfoCard
+            <InfoCard
 
-          icon={
-            <Mail
-            className="text-blue-600"
+            icon={
+              <Mail
+              className="text-blue-600"
+              />
+            }
+
+            title="Email"
+
+            value="kidusyaredlik@gmail.com"
+
             />
-          }
-
-          title="Email"
-
-          value="kidusyaredlik@gmail.com"
-
-          />
 
 
 
-          <InfoCard
+            <InfoCard
 
-          icon={
-            <Briefcase
-            className="text-blue-600"
+            icon={
+              <Briefcase
+              className="text-blue-600"
+              />
+            }
+
+            title="Experience"
+
+            value="1+ Years"
+
             />
-          }
-
-          title="Experience"
-
-          value="1+ Years"
-
-          />
 
 
 
-          <InfoCard
+            <InfoCard
 
-          icon={
-            <GraduationCap
-            className="text-blue-600"
+            icon={
+              <GraduationCap
+              className="text-blue-600"
+              />
+            }
+
+            title="Education"
+
+            value="BSc Information Technology"
+
             />
-          }
-
-          title="Education"
-
-          value="BSc Information Technology"
-
-          />
-
 
 
           </div>
 
 
-          </motion.div>
-                    {/* RIGHT SIDE */}
+
+        </motion.div>
+
+
+
+
+
+        {/* RIGHT SIDE */}
+
+
+        <motion.div
+
+          initial={{
+            opacity:0,
+            x:60
+          }}
+
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+          transition={{
+            duration:.7
+          }}
+
+          className="space-y-8"
+
+        >
+
+
+
+          {/* EXPERTISE CARD */}
+
 
           <motion.div
-            initial={{
-              opacity:0,
-              x:60
-            }}
 
-            whileInView={{
-              opacity:1,
-              x:0
-            }}
+          whileHover={{
+            y:-8,
+            scale:1.02
+          }}
 
-            viewport={{
-              once:true
-            }}
+          className="
+          rounded-3xl
+          p-8
+          bg-gradient-to-r
+          from-blue-600
+          to-indigo-600
+          text-white
+          shadow-2xl
+          "
 
-            transition={{
-              duration:.7
-            }}
-
-            className="space-y-8"
           >
 
 
-            {/* My Focus */}
+            <Code2
+            size={45}
+            className="mb-6"
+            />
 
-            <motion.div
 
-            whileHover={{
-              y:-8,
-              scale:1.02
-            }}
 
+            <h3
             className="
-            rounded-3xl
-            p-8
-            bg-gradient-to-r
-            from-blue-600
-            to-indigo-600
-            text-white
-            shadow-2xl
+            text-3xl
+            font-bold
+            mb-5
             "
-
             >
 
-              <Code2
-              size={45}
-              className="mb-6"
-              />
+              My Expertise
 
-
-              <h3
-              className="
-              text-3xl
-              font-bold
-              mb-5
-              "
-              >
-
-                My Focus
-
-              </h3>
+            </h3>
 
 
 
-              <p
-              className="
-              leading-8
-              text-blue-100
-              "
-              >
-
-                I build modern web applications,
-                AI-powered software, and fintech solutions
-                that deliver excellent user experiences
-                while solving real business problems.
-
-              </p>
-
-
-            </motion.div>
-
-
-
-
-
-            {/* Career Goal */}
-
-
-            <motion.div
-
-            whileHover={{
-              y:-8,
-              scale:1.02
-            }}
-
+            <p
             className="
-            rounded-3xl
-            p-8
-            bg-white/70
-            dark:bg-gray-900/80
-            backdrop-blur-xl
-            border
-            border-gray-200
-            dark:border-gray-700
-            shadow-xl
+            leading-8
+            text-blue-100
             "
-
             >
 
+              I build modern web applications,
+              AI-powered software, and fintech solutions
+              that deliver excellent user experiences
+              while solving real business problems.
 
-              <h3
-              className="
-              text-3xl
-              font-bold
-              mb-6
-              text-gray-900
-              dark:text-white
-              "
-              >
-
-                Career Goal
-
-              </h3>
+            </p>
 
 
-              <p
-              className="
-              text-gray-600
-              dark:text-gray-400
-              leading-8
-              "
-              >
 
-                My goal is to work with innovative companies,
-                contribute to impactful software products,
-                continuously improve my technical skills,
-                and create solutions that make people's lives easier.
-
-              </p>
-
-
-            </motion.div>
+          </motion.div>
 
 
 
 
 
 
+          {/* CAREER GOAL */}
 
-            {/* Specialization */}
+
+          <motion.div
+
+          whileHover={{
+            y:-8,
+            scale:1.02
+          }}
+
+          className="
+          rounded-3xl
+          p-8
+          bg-white/70
+          dark:bg-gray-900/80
+          backdrop-blur-xl
+          border
+          border-gray-200
+          dark:border-gray-700
+          shadow-xl
+          "
+
+          >
 
 
-            <motion.div
-
-            whileHover={{
-              y:-8,
-              scale:1.02
-            }}
-
+            <h3
             className="
-            rounded-3xl
-            p-8
-            bg-white
-            dark:bg-gray-900
-            border
-            border-gray-200
-            dark:border-gray-700
-            shadow-xl
+            text-3xl
+            font-bold
+            mb-6
+            text-gray-900
+            dark:text-white
             "
-
             >
 
+              Career Goal
+
+            </h3>
 
 
-              <h3
+
+            <p
+            className="
+            text-gray-600
+            dark:text-gray-400
+            leading-8
+            "
+            >
+
+              My goal is to work with innovative companies,
+              contribute to impactful software products,
+              continuously improve my technical skills,
+              and create digital solutions that make
+              people's lives easier.
+
+            </p>
+
+
+          </motion.div>
+
+
+
+
+
+
+          {/* SPECIALIZATION */}
+
+
+
+          <motion.div
+
+          whileHover={{
+            y:-8,
+            scale:1.02
+          }}
+
+          className="
+          rounded-3xl
+          p-8
+          bg-white
+          dark:bg-gray-900
+          border
+          border-gray-200
+          dark:border-gray-700
+          shadow-xl
+          "
+
+          >
+
+
+
+            <h3
+            className="
+            text-3xl
+            font-bold
+            mb-8
+            text-gray-900
+            dark:text-white
+            "
+            >
+
+              What I Specialize In
+
+            </h3>
+
+
+
+
+            <div className="space-y-5">
+
+
+            {[
+              "React & TypeScript Development",
+              "Firebase & Cloud Solutions",
+              "AI-Powered Applications",
+              "FinTech & Digital Loan Systems",
+              "REST API Integration",
+              "Responsive Web Design",
+
+            ].map((item)=>(
+
+
+              <div
+
+              key={item}
+
               className="
-              text-3xl
-              font-bold
-              mb-8
-              text-gray-900
-              dark:text-white
+              flex
+              items-center
+              gap-4
               "
+
               >
 
-                What I Specialize In
 
-              </h3>
+                <CheckCircle
 
+                size={22}
 
+                className="text-blue-600"
 
-
-              <div className="space-y-5">
-
-
-              {[
-                "React Development",
-                "TypeScript",
-                "Firebase Integration",
-                "REST API Integration",
-                "AI Applications",
-                "Responsive Web Design",
-
-              ].map((item)=>(
+                />
 
 
-                <div
-                key={item}
+
+                <span
+
                 className="
-                flex
-                items-center
-                gap-4
+                text-gray-700
+                dark:text-gray-300
+                text-lg
                 "
+
                 >
 
-                  <CheckCircle
-                  size={22}
-                  className="text-blue-600"
-                  />
+                  {item}
 
-
-                  <span
-                  className="
-                  text-gray-700
-                  dark:text-gray-300
-                  text-lg
-                  "
-                  >
-
-                    {item}
-
-                  </span>
-
-
-                </div>
-
-
-              ))}
+                </span>
 
 
               </div>
 
 
-            </motion.div>
+            ))}
+
+
+
+            </div>
+
 
 
           </motion.div>
+
+
+
+        </motion.div>
+
 
 
         </div>
@@ -646,8 +680,11 @@ export default function About() {
 
 
     </section>
+
   );
+
 }
+
 
 
 
@@ -661,12 +698,14 @@ export default function About() {
 
 
 function Stat({
-  value,
-  title,
+
+value,
+title,
 
 }:{
-  value:string;
-  title:string;
+
+value:string;
+title:string;
 
 }){
 
@@ -676,8 +715,10 @@ return (
 <motion.div
 
 whileHover={{
-  y:-5,
-  scale:1.05
+
+y:-5,
+scale:1.05
+
 }}
 
 className="
@@ -697,11 +738,13 @@ py-6
 
 
 <h3
+
 className="
 text-4xl
 font-extrabold
 text-blue-600
 "
+
 >
 
 {value}
@@ -711,11 +754,13 @@ text-blue-600
 
 
 <p
+
 className="
 mt-2
 text-gray-600
 dark:text-gray-400
 "
+
 >
 
 {title}
@@ -729,8 +774,8 @@ dark:text-gray-400
 
 );
 
-
 }
+
 
 
 
@@ -763,8 +808,10 @@ return (
 <motion.div
 
 whileHover={{
- y:-6,
- scale:1.03
+
+y:-6,
+scale:1.03
+
 }}
 
 className="
@@ -811,12 +858,15 @@ justify-center
 
 <div>
 
+
 <p
+
 className="
 text-sm
 text-gray-500
 dark:text-gray-400
 "
+
 >
 
 {title}
@@ -826,16 +876,19 @@ dark:text-gray-400
 
 
 <h4
+
 className="
 font-semibold
 text-gray-900
 dark:text-white
 "
+
 >
 
 {value}
 
 </h4>
+
 
 
 </div>
@@ -846,6 +899,5 @@ dark:text-white
 
 
 );
-
 
 }
