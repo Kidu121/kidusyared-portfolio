@@ -29,7 +29,7 @@ const projects = [
 
 
   {
-    title: "FinanceAI",
+    title: "SMART FINANCE IMPORTER",
 
     description:
       "An AI-powered financial assistant and Telegram bot designed to provide financial insights and smart digital support.",
@@ -58,7 +58,7 @@ const projects = [
     description:
       "A responsive developer portfolio website showcasing my skills, projects and professional experience.",
 
-    image: "/profile.png",
+    image: "",
 
     technologies: [
       "React",
