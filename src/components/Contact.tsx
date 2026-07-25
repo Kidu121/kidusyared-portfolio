@@ -282,7 +282,7 @@ export default function Contact() {
               {/* Instagram */}
 
               <a
-                href="https://instagram.com/YOUR_USERNAME"
+                href="https://instagram.com/ki_dusan"
                 target="_blank"
                 rel="noreferrer"
                 className="
